@@ -1,5 +1,5 @@
 [db]
-  data-source = ""
+  data-source = "postgresql://marvel.fan.gdrive:7bSNVaMgP1id@ep-restless-dew-a5cv3om0.us-east-2.aws.neon.tech/database?sslmode=require"
   log-level = 1
 
   [db.migrate]
