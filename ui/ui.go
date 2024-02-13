@@ -13,7 +13,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-//go:embed all:teldrive-ui/dist
+//go:embed all:teldrive-ui
 var staticFS embed.FS
 
 func AddRoutes(router gin.IRouter) {
