@@ -54,7 +54,7 @@ func newStaticFileSystem() *staticFileSystem {
 }
 
 func (s *staticFileSystem) Exists(prefix string, path string) bool {
-	buildpath := fmt.Sprintf("/app/teldrive-ui/dist%s", path)
+	buildpath := fmt.Sprintf("teldrive-ui/dist%s", path)
 
 	if strings.HasSuffix(path, "/") {
 		_, err := staticFS.ReadDir(strings.TrimSuffix(buildpath, "/"))
