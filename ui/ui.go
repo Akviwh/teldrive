@@ -42,7 +42,7 @@ type staticFileSystem struct {
 var _ static.ServeFileSystem = (*staticFileSystem)(nil)
 
 func newStaticFileSystem() *staticFileSystem {
-	sub, err := fs.Sub(staticFS, "teldrive-ui/dist")
+	sub, err := fs.Sub(staticFS, "teldrive-ui")
 
 	if err != nil {
 		panic(err)
@@ -54,7 +54,7 @@ func newStaticFileSystem() *staticFileSystem {
 }
 
 func (s *staticFileSystem) Exists(prefix string, path string) bool {
-	buildpath := fmt.Sprintf("teldrive-ui/dist%s", path)
+	buildpath := fmt.Sprintf("teldrive-ui", path)
 
 	if strings.HasSuffix(path, "/") {
 		_, err := staticFS.ReadDir(strings.TrimSuffix(buildpath, "/"))
