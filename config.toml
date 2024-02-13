@@ -12,7 +12,7 @@
 
 [jwt]
   allowed-users = [""]
-  secret = ""
+  secret = "99bdd62e4495df67f0b406689d7456f3"
   session-time = "720h"
 
 [log]
