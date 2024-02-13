@@ -26,7 +26,7 @@
   write-timeout = "30s"
 
 [tg]
-  app-hash = ""
+  app-hash = "0ce941d6a16e6f7b5fefb879341900b8"
   app-id = 0
   app-version = "2.1.9 K"
   bg-bots-limit = 5
