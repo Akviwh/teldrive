@@ -5,7 +5,7 @@ FROM ghcr.io/divyam234/teldrive
 WORKDIR /app
 
 # Copy the application files into the container
-COPY teldrive.db /app/teldrive.db
+
 COPY config.toml /app/config.toml
 
 # Expose the required port
